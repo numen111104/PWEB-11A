@@ -14,6 +14,7 @@
 // Gaji Akhir >= 5.000.000 -> "Gaji nama Lumayan Tinggi"
 // Gaji Akhir selain itu -> "Gaji nama Standar"
 // Return value functionnya harus string
+// Contoh output yang diharapkan: "nama mendampatkan gaji totalGaji dengan status Gaji sesuai dengan status"
 
 const hitungGaji = (nama, gajiPokok, jumlahJamLembur) => {
     const bonusLemburPerJam = 25000;
