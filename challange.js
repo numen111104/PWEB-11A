@@ -17,8 +17,33 @@
 // Contoh output yang diharapkan: "nama mendampatkan gaji totalGaji dengan status Gaji sesuai dengan status"
 
 const hitungGaji = (nama, gajiPokok, jumlahJamLembur) => {
-    const bonusLemburPerJam = 25000;
-    const totalUangLembur = bonusLemburPerJam * jumlahJamLembur;
-    const gajiPokokSebelumBonus = gajiPokok + totalUangLembur;
-    // lanjutkan
-}
+  const bonusLemburPerJam = 25000;
+  const totalUangLembur = bonusLemburPerJam * jumlahJamLembur;
+  const gajiPokokSebelumBonus = gajiPokok + totalUangLembur;
+  // lanjutkan
+
+  let bonus; // definisi variabelnya dulu
+  if (gajiPokokSebelumBonus >= 5000000) {
+    bonus = gajiPokokSebelumBonus * 0.1;
+  } else if (gajiPokokSebelumBonus >= 3000000) {
+    bonus = gajiPokokSebelumBonus * 0.05;
+  } else {
+    bonus = 0;
+  }
+
+  // pakai ternary
+  const bonusTernary =
+    gajiPokokSebelumBonus >= 5000000
+      ? gajiPokokSebelumBonus * 0.1
+      : gajiPokokSebelumBonus >= 3000000
+        ? gajiPokokSebelumBonus * 0.05
+        : 0;
+
+  const gajiAkhir = gajiPokokSebelumBonus + bonusTernary;
+
+  const status = gajiAkhir >= 5000000 ? "Gaji Tinggi" : "Gaji Standar";
+
+  return `${nama} mendapatkan gaji Rp${gajiAkhir} dengan status ${status}`;
+};
+
+console.log(hitungGaji("Kaysan", 7000000, 14));
