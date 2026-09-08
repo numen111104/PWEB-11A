@@ -85,3 +85,23 @@ const accounts = {
 accounts.isBanned = true; // mengubah value property isBanned menjadi true
 console.info("Mengubah value property pada object");
 console.log(accounts.isBanned); // true
+
+// Menghapus property pada object
+console.log(accounts);
+delete accounts.isBanned; // menghapus property isBanned
+console.log(accounts);
+
+// Menambahkan property pada object
+accounts.category = "Education"; // dot notation
+console.info("Menambahkan property pada object");
+console.log(accounts.category); // Education 
+console.log(accounts); // menampilkan object accounts setelah ditambahkan property category
+
+accounts['role'] = "Admin"; // square bracket
+console.log(accounts.role); // Admin
+console.log(accounts); // menampilkan object accounts setelah ditambahkan property role
+delete accounts['role'];
+
+const { masaBerlaku = 10 } = accounts; // menambahkan property masaBerlaku dengan default value 10
+console.log(masaBerlaku); // 10
+console.log(accounts); // menampilkan object accounts setelah ditambahkan property masaBerlaku
