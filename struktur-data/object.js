@@ -24,63 +24,60 @@ console.log(products.name);
 console.log(products.isAvailable);
 console.log(products.price);
 
-// Kekurangan dari dot notation adalah nama key yang ingin diakses harus valid; 
-// tidak boleh mengandung spasi; 
-// tidak boleh diawali angka; 
+// Kekurangan dari dot notation adalah nama key yang ingin diakses harus valid;
+// tidak boleh mengandung spasi;
+// tidak boleh diawali angka;
 // dan tidak boleh mengandung spesial karakter.
-
 
 // 2. Menggunakan Square Bracket
 console.info("Mengakses property pada object menggunakan Square Bracket");
-const isProdukAvailable = products['isAvailable']; // menyimpan property di dalam variabel lain
-const namaProduk = products['name'];
+const isProdukAvailable = products["isAvailable"]; // menyimpan property di dalam variabel lain
+const namaProduk = products["name"];
 console.log(isProdukAvailable);
-
 
 // 3. Menggunakan Object Destructuring
 const kelas = {
-    "totalMeja": 21,
-    totalSiswa: 20,
-    isClean: false
+  totalMeja: 21,
+  totalSiswa: 20,
+  isClean: false,
 };
 
-// Destructuring dalam JavaScript merupakan sintaksis yang dapat mengeluarkan nilai dari properti object 
+// Destructuring dalam JavaScript merupakan sintaksis yang dapat mengeluarkan nilai dari properti object
 // ke dalam satuan yang lebih kecil (variabel)
 const { isClean, totalSiswa } = kelas;
 console.info("Mengakses Propert pada object menggunakan object destructuring");
 console.log(isClean);
 console.log(totalSiswa);
 
-// Destructuring object yang key-nya tidak ada akan mengembalikan nilai undefined. 
-// Oleh karena itu, kita bisa memanfaatkan default value ketika destructuring object 
+// Destructuring object yang key-nya tidak ada akan mengembalikan nilai undefined.
+// Oleh karena itu, kita bisa memanfaatkan default value ketika destructuring object
 // seperti berikut ini agar nilainya tidak undefined.
 const { isTvMerdeka } = kelas; // hasil undefined karena tidak ada key nya di object kelas.
 console.log(isTvMerdeka);
 
 const { totalSiswaHasLaptop = 18 } = kelas; // kita kasih default value pada key yang tidak ada di dalam properti objek
-console.log(totalSiswaHasLaptop); // hasil 18 
+console.log(totalSiswaHasLaptop); // hasil 18
 
 /// contoh lain
 const user = {
   id: 24,
-  email: 'aras@dicoding.com',
-  name: 'Arsy',
-  nickname: 'Aras',
-  username: 'aras123',
-  password: 'secret',
+  email: "aras@dicoding.com",
+  name: "Arsy",
+  nickname: "Aras",
+  username: "aras123",
+  password: "secret",
 };
-// sangat memudahkan untuk mengambil beberapa properti dari object sekaligus, 
+// sangat memudahkan untuk mengambil beberapa properti dari object sekaligus,
 // tanpa harus menulisnya satu per satu.
-const { name, password } = user; 
-
+const { name, password } = user;
 
 // Mengubah value property pada object
 const accounts = {
-    username: 'dicoding',
-    password: 'secret',
-    isActive: true,
-    isBanned: false
-}
+  username: "dicoding",
+  password: "secret",
+  isActive: true,
+  isBanned: false,
+};
 
 accounts.isBanned = true; // mengubah value property isBanned menjadi true
 console.info("Mengubah value property pada object");
@@ -94,14 +91,25 @@ console.log(accounts);
 // Menambahkan property pada object
 accounts.category = "Education"; // dot notation
 console.info("Menambahkan property pada object");
-console.log(accounts.category); // Education 
+console.log(accounts.category); // Education
 console.log(accounts); // menampilkan object accounts setelah ditambahkan property category
 
-accounts['role'] = "Admin"; // square bracket
+accounts["role"] = "Admin"; // square bracket
 console.log(accounts.role); // Admin
 console.log(accounts); // menampilkan object accounts setelah ditambahkan property role
-delete accounts['role'];
+delete accounts["role"];
 
 const { masaBerlaku = 10 } = accounts; // menambahkan property masaBerlaku dengan default value 10
 console.log(masaBerlaku); // 10
 console.log(accounts); // menampilkan object accounts setelah ditambahkan property masaBerlaku
+
+// Apakah bisa function disimpan di dalam value properti object
+
+const test = {
+  1: (nama) => {
+    return "Halo" + nama;
+  },
+};
+const functionTest = test[1];
+
+console.log(functionTest("Ardhi"));
