@@ -36,17 +36,3 @@ console.log(arrayPop);
 const arrayShift = ["Satu", "Dua", "Tiga", "Empat"];
 arrayShift.shift();
 console.log(arrayShift);
-
-// apakah bisa function disimpan di dalam elemen array?
-
-const arrayFunct = [
-  (nama) => "Hello " + nama,
-  () => "Function kedua",
-  function halo() {
-    return "HALO LAGI";
-  },
-];
-
-const [functSatu, functDua] = arrayFunct;
-
-console.log(functSatu("Ardhi"), functDua());
