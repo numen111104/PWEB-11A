@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT</title>
+</head>
+
+<style>
+    .btn {
+        background-color: black;
+        color: aqua;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .judulBerubah {
+        color: red;
+    }
+
+    .gambar {
+        width: 10%;
+        height: 10%;
+    }
+</style>
+
+<body>
+    <button class="btn">Klik saya</button>
+    <h1 id="judul">Belum Diklik</h1>
+
+    <button class="btn" id="btn-gambar">Ganti Gambar</button>
+    <img class="gambar" src="./apel.png" alt="APEL">
+
+    <script>
+        const btn = document.querySelector(".btn");
+        const judul = document.querySelector("#judul");
+        const btnGambar = document.querySelector("#btn-gambar");
+        const gambar = document.querySelector(".gambar");
+
+        btn.addEventListener("click", function () {
+            judul.textContent = "Tombol berhasil di klik!";
+            judul.className = "judulBerubah"
+        })
+
+        btnGambar.addEventListener("click", () => {
+            gambar.src = "./apel-hijau.png";
+        })
+    </script>
+</body>
+
+</html>

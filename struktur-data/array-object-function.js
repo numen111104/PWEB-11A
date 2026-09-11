@@ -51,3 +51,8 @@ const kelas11A = [
 ];
 
 console.log(kelas11A[2](kelas11A[0]));
+
+// Buat satu variabel baru, dengan nama dataSuhu, elemen 1 - 2 number,
+// kemudian elemen ke 3-4 adalah function, elemen 3 adalah function yang konversi
+// elemen 1 dari celcius ke fahrenheit
+// elemen 4 adalah function yang konversi elemen 2 dari fahrenheit ke celcius
