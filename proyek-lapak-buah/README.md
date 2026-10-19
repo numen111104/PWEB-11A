@@ -13,12 +13,15 @@ proyek-lapak-buah/
 ├── starter/               Kerangka untuk siswa (HTML jadi, CSS dan JS berisi TODO)
 └── modul/
     ├── pdf/                          PDF siap cetak (lihat bagian "Modul PDF")
+    │   └── kartu/                    Kartu mengajar: 1 halaman per pertemuan
     ├── 01-modul-ajar.md              Guru. Tujuan, jadwal, kegiatan per pertemuan, strategi
     ├── 02-panduan-siswa.md           Siswa. Panduan bertahap
     ├── 03-rubrik-penilaian.md        Guru. Rubrik, lembar penilaian, rumus nilai
     ├── 04-lembar-kerja-siswa.md      Siswa. Lembar kerja, uji silang, refleksi
     ├── 05-bahan-guru.md              Guru. Mini-lesson, kunci, bank soal wawancara, troubleshooting
-    ├── build-pdf.sh                  Membuat ulang PDF dari berkas .md
+    ├── kartu/                        Sumber kartu mengajar (p1.md sampai p5.md)
+    ├── build-pdf.sh                  Membuat ulang PDF modul lengkap dan paket siswa
+    ├── build-kartu.sh                Membuat ulang kartu mengajar
     └── cetak/                        Gaya cetak dan sampul untuk PDF
 ```
 
@@ -31,10 +34,28 @@ Folder `modul/pdf/` berisi dua PDF A4 yang siap dicetak atau dibagikan:
 | `Modul-Lapak-Buah-11A-Lengkap-Guru.pdf` | Sampul, daftar isi, modul ajar, panduan siswa, rubrik, lembar kerja, bahan guru | Guru (61 halaman) |
 | `Paket-Siswa-Lapak-Buah-11A.pdf` | Sampul, panduan siswa, lembar kerja | Dibagikan ke siswa (31 halaman) |
 
-Jika isi modul (`.md`) diubah, buat ulang PDF-nya. Perlu `pandoc` dan Google Chrome (macOS):
+### Kartu mengajar (ringkas, 1 halaman per pertemuan)
+
+Untuk dipegang saat mengajar dan praktik. Folder `modul/pdf/kartu/`:
+
+| Berkas | Pertemuan |
+|---|---|
+| `Kartu-P1-Senin-19-Okt.pdf` | 1: Kerangka halaman dan data produk |
+| `Kartu-P2-Selasa-20-Okt-Jam-3.pdf` | 2: Katalog dinamis |
+| `Kartu-P3-Selasa-20-Okt-Jam-6-7.pdf` | 3: Nota dengan Map |
+| `Kartu-P4-Rabu-21-Okt.pdf` | 4: Diskon, pembayaran, kupon |
+| `Kartu-P5-Kamis-22-Okt.pdf` | 5: Finishing, uji silang, wawancara |
+| `Kartu-Mengajar-5-Pertemuan.pdf` | Kelimanya dalam satu berkas (5 halaman) |
+
+Isi tiap kartu: jalan kelas menit demi menit, poin yang diucapkan, peragaan kode, kunci tebakan, checkpoint, error yang sering muncul, rencana kalau telat, exit ticket beserta kuncinya.
+
+### Membuat ulang PDF
+
+Jika isi modul (`.md`) atau kartu (`kartu/*.md`) diubah, buat ulang PDF-nya. Perlu `pandoc` dan Google Chrome (macOS):
 
 ```bash
-bash proyek-lapak-buah/modul/build-pdf.sh
+bash proyek-lapak-buah/modul/build-pdf.sh      # modul lengkap dan paket siswa
+bash proyek-lapak-buah/modul/build-kartu.sh    # kartu mengajar
 ```
 
 ## Mulai dari mana (guru)

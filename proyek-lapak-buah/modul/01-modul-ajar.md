@@ -151,6 +151,8 @@ Total: 10 JP, 370 menit.
 
 Penanda langkah (`1.3`, `2.2`, dan seterusnya) sama dengan penanda di `starter/` dan `modul/02-panduan-siswa.md`.
 
+> **Untuk dipegang saat mengajar:** ringkasan **satu halaman per pertemuan** (jalan kelas menit demi menit, poin yang diucapkan, kunci tebakan, error yang sering muncul, exit ticket dan kuncinya) ada di `modul/pdf/kartu/`. Bagian 7 ini adalah versi lengkapnya.
+
 ### Pertemuan 1: Kerangka halaman dan data produk
 
 **Senin 19 Oktober 2026, jam ke-7 sampai 9, 13:05 sampai 15:00, PWEB, 110 menit**

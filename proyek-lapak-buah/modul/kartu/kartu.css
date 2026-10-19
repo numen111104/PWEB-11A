@@ -1,0 +1,88 @@
+/* kartu.css: penimpa gaya untuk kartu mengajar ringkas (1 halaman per pertemuan). Dipakai setelah cetak.css. */
+@page {
+  margin: 10mm 11mm 12mm;
+}
+
+html {
+  font-size: 9.9pt;
+}
+
+body {
+  line-height: 1.36;
+}
+
+h1 {
+  margin: 0 0 3pt;
+  padding-bottom: 3pt;
+  border-bottom-width: 2pt;
+  font-size: 17pt;
+}
+
+h2 {
+  margin: 8pt 0 3pt;
+  font-size: 10.5pt;
+}
+
+h3 {
+  margin: 7pt 0 2pt;
+  padding: 1.5pt 5pt;
+  border-left: 3pt solid var(--pisang);
+  background: #eef4ec;
+  font-size: 10.5pt;
+  color: var(--daun);
+}
+
+p {
+  margin: 0 0 3.5pt;
+}
+
+ul,
+ol {
+  margin: 0 0 4pt;
+  padding-left: 12pt;
+}
+
+li {
+  margin-bottom: 1pt;
+}
+
+table {
+  margin: 3pt 0 5pt;
+  font-size: 8.9pt;
+  line-height: 1.3;
+}
+
+th,
+td {
+  padding: 1.8pt 4pt;
+}
+
+pre {
+  margin: 2pt 0 5pt;
+  padding: 3.5pt 6pt;
+  font-size: 8.2pt;
+  line-height: 1.32;
+}
+
+code {
+  font-size: 0.9em;
+}
+
+blockquote {
+  margin: 3pt 0 5pt;
+  padding: 3pt 8pt;
+}
+
+.dua-kolom {
+  column-count: 2;
+  column-gap: 6mm;
+  column-fill: balance;
+}
+
+.dua-kolom > h3:first-child {
+  margin-top: 2pt;
+}
+
+.dua-kolom table {
+  font-size: 8.5pt;
+}
