@@ -12,18 +12,36 @@ proyek-lapak-buah/
 ├── contoh-jadi/           Proyek selesai. KHUSUS GURU, jangan dibagikan sebelum Kamis
 ├── starter/               Kerangka untuk siswa (HTML jadi, CSS dan JS berisi TODO)
 └── modul/
+    ├── pdf/                          PDF siap cetak (lihat bagian "Modul PDF")
     ├── 01-modul-ajar.md              Guru. Tujuan, jadwal, kegiatan per pertemuan, strategi
     ├── 02-panduan-siswa.md           Siswa. Panduan bertahap
     ├── 03-rubrik-penilaian.md        Guru. Rubrik, lembar penilaian, rumus nilai
     ├── 04-lembar-kerja-siswa.md      Siswa. Lembar kerja, uji silang, refleksi
-    └── 05-bahan-guru.md              Guru. Mini-lesson, kunci, bank soal wawancara, troubleshooting
+    ├── 05-bahan-guru.md              Guru. Mini-lesson, kunci, bank soal wawancara, troubleshooting
+    ├── build-pdf.sh                  Membuat ulang PDF dari berkas .md
+    └── cetak/                        Gaya cetak dan sampul untuk PDF
+```
+
+## Modul PDF
+
+Folder `modul/pdf/` berisi dua PDF A4 yang siap dicetak atau dibagikan:
+
+| Berkas | Isi | Untuk |
+|---|---|---|
+| `Modul-Lapak-Buah-11A-Lengkap-Guru.pdf` | Sampul, daftar isi, modul ajar, panduan siswa, rubrik, lembar kerja, bahan guru | Guru (61 halaman) |
+| `Paket-Siswa-Lapak-Buah-11A.pdf` | Sampul, panduan siswa, lembar kerja | Dibagikan ke siswa (31 halaman) |
+
+Jika isi modul (`.md`) diubah, buat ulang PDF-nya. Perlu `pandoc` dan Google Chrome (macOS):
+
+```bash
+bash proyek-lapak-buah/modul/build-pdf.sh
 ```
 
 ## Mulai dari mana (guru)
 
 1. Baca `modul/01-modul-ajar.md`, terutama bagian 5 (persiapan) dan 7 (rencana per pertemuan).
 2. Jalankan `contoh-jadi/` untuk melihat hasil akhirnya (cara di bawah).
-3. Bagikan `starter/`, `modul/02-panduan-siswa.md`, dan `modul/04-lembar-kerja-siswa.md` ke siswa.
+3. Bagikan folder `starter/` dan `modul/pdf/Paket-Siswa-Lapak-Buah-11A.pdf` (atau berkas `.md` yang sama) ke siswa.
 
 ## Menjalankan proyek
 
