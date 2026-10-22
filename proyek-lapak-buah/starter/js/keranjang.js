@@ -20,12 +20,22 @@ export default keranjang;
 //      b. jika jumlah sekarang SUDAH >= item.stok -> return false
 //      c. selain itu: keranjang.set(item, jumlah sekarang + 1) lalu return true
 export const tambahItem = (item) => {
-  // TODO
+  const jumlahSekarang = keranjang.has(item) ? keranjang.get(item) : 0;
+  if (jumlahSekarang >= item.stok) {
+    return false;
+  }
+  keranjang.set(item, jumlahSekarang + 1);
+  return true;
 };
 
 // 2. kurangiItem(item) — mengurangi 1 kg. Jika tinggal 1 kg, item dibuang dari nota (keranjang.delete).
 export const kurangiItem = (item) => {
-  // TODO
+  const jumlahSekarang = keranjang.get(item);
+  if (jumlahSekarang > 1) {
+    keranjang.set(item, jumlahSekarang - 1);
+  } else {
+    keranjang.delete(item);
+  }
 };
 
 // 3. hapusItem(item) — membuang item dari nota, berapa pun jumlahnya.
