@@ -40,12 +40,12 @@ export const kurangiItem = (item) => {
 
 // 3. hapusItem(item) — membuang item dari nota, berapa pun jumlahnya.
 export const hapusItem = (item) => {
-  // TODO
+  keranjang.delete(item);
 };
 
 // 4. kosongkanKeranjang() — mengosongkan seluruh Map. Cari method Map yang tepat (bukan delete satu per satu).
 export const kosongkanKeranjang = () => {
-  // TODO
+  keranjang.clear();
 };
 
 // 5. hitungSubtotal() — jumlah (harga x kg) seluruh item di keranjang. Mengembalikan number.
