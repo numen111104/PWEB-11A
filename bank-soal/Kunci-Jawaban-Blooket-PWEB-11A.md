@@ -25,7 +25,7 @@ Sebaran posisi jawaban benar: jawaban 1: 13 soal, jawaban 2: 13 soal, jawaban 3:
 | 17 | Boolean() | 30 dtk | 2 | `"" (string kosong)` |
 | 18 | Hoisting | 25 dtk | 1 | `Hoisting` |
 | 19 | Function expression tidak kena hoisting | 30 dtk | 2 | `ReferenceError: dipakai sebelum dideklarasikan` |
-| 20 | Parameter default | 30 dtk | 4 | `4 10` |
+| 20 | Parameter default | 30 dtk | 4 | `4 dan 10` |
 | 21 | Return | 30 dtk | 4 | `Tidak ada, kode setelah return tidak pernah dijalankan` |
 | 22 | Arrow function tanpa return | 30 dtk | 2 | `undefined` |
 | 23 | Arrow function satu parameter | 25 dtk | 4 | `hanya satu` |

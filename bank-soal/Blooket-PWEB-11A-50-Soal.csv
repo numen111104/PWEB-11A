@@ -1,0 +1,56 @@
+﻿,,,,,,,
+Question #,Question Text,Answer 1,Answer 2,"Answer 3 
+(Optional)","Answer 4 
+(Optional)","Time Limit (sec) 
+(Max: 300 Seconds)","Correct Answer(s) 
+(Only Include Answer #)"
+1,"🎮 Dimas menulis `5 + 4` di console. Dalam ekspresi ini, siapa operator dan siapa operannya?",Operator: + dan 5 | Operan: 4,Operator: + | Operan: 5 dan 4,Operator: 5 dan 4 | Operan: +,Operator: 5 | Operan: + dan 4,20,2
+2,Pasangan MANA yang benar? `typeof x` | `a + b` | `umur >= 18 ? 'A' : 'B'`,unary | ternary | binary,binary | unary | ternary,unary | binary | ternary,ternary | binary | unary,25,3
+3,🍰 Ada 14 potong kue dibagi rata ke 3 anak. Sisa kue dihitung dengan `14 % 3`. Berapa hasilnya?,4.67,2,0,4,20,2
+4,Tebak output! `let x = 50; console.log(x++); console.log(++x);` Apa yang tercetak berurutan di console?,51 lalu 53,51 lalu 52,50 lalu 52,50 lalu 51,30,3
+5,💥 Damage skill di game naik dengan rumus `2 ** 10`. Berapa damage yang dihasilkan?,1024,100,20,512,20,1
+6,"Kurung dikerjakan dulu, lalu `*` dan `/`, baru `+` dan `-`. Berapa hasil `10 + (2 - 5) * 2`?",-6,7,14,4,30,4
+7,Perhatikan: `const a = 10; const b = '10'; console.log(a == b); console.log(a === b);` Berapa hasil `a == b` dan `a === b` secara berurutan?,true lalu false,false lalu true,false lalu false,true lalu true,25,1
+8,🏆 Syarat ikut turnamen: umur minimal 15 DAN punya tim. Dimas umur 16 tapi belum punya tim. `let umur = 16; let punyaTim = false; console.log(umur >= 15 && punyaTim);` Berapa hasil `umur >= 15 && punyaTim`?,16,false,undefined,true,25,2
+9,"🔮 Tebak hasil dari `!(4 === 4) || !false`. Hati-hati, ada dua operator logika!",Error,undefined,true,false,25,3
+10,🎬 Bioskop mengecek umur penonton. `const umur = 15; console.log(umur >= 18 ? 'Silakan masuk' : 'Belum cukup umur');` Apa output di console?,false,undefined,Belum cukup umur,Silakan masuk,20,3
+11,🔒 Apa yang terjadi saat kode ini dijalankan? `const nama = 'Rizky'; nama = 'Dimas'; console.log(nama);`,Tercetak: Rizky,Tercetak: undefined,Tercetak: Dimas,Error: const tidak bisa diberi nilai baru,25,4
+12,JavaScript suka 'menyambung' diam-diam! `const jumlah = '40' + 40; console.log(jumlah);` Apa hasil yang tercetak?,80 (number),NaN,Error,4040 (string),20,4
+13,Tebak output: `console.log(true + 10);`,10,NaN,11,true10,20,3
+14,🧩 Semua ikut jadi string! `const jumlah = '4040'; const hasil = jumlah + true + 10; console.log(hasil);` Apa outputnya?,4040true10,4040true,404011,4051,30,1
+15,Tinggi badan Sari ditulis `'165cm'`. Berapa hasil `parseInt('165cm') + 5`?,170,165cm5,165,NaN,25,1
+16,"⚡ Tegangan ditulis `'20.5Volt'`. Apa hasil `Number('20.5Volt')` lalu `parseFloat('20.5Volt')`, secara berurutan?",20 lalu 20.5,20.5 lalu 20.5,20.5 lalu NaN,NaN lalu 20.5,30,4
+17,"👻 Dari empat nilai ini, mana yang jika dibungkus `Boolean(...)` hasilnya `false`?",'0' (string berisi angka nol),""""" (string kosong)",'false' (string berisi kata false),123,30,2
+18,"Pak Guru memanggil `sapa()` di baris 1, padahal `function sapa() {...}` baru ditulis di baris 10, dan programnya tetap jalan. Fitur apa yang menolongnya?",Hoisting,Closure,Destructuring,Template literal,25,1
+19,"💥 Apa yang terjadi? `console.log(kali(2, 3)); const kali = function (a, b) { return a * b; };`",Tercetak undefined,ReferenceError: dipakai sebelum dideklarasikan,Tercetak NaN,Tercetak 6,30,2
+20,"Tebak output: `function kali(n = 2) { return n * 2; } console.log(kali(), kali(5));`",2 dan 5,NaN dan 10,0 dan 10,4 dan 10,30,4
+21,Dimas membuat `function sapa() { return 'Halo Bang'; console.log('Halo Juga Bang'); } sapa();` lalu memanggil `sapa();` di sebuah file script. Apa yang muncul di console?,Halo Juga Bang,Halo Bang,Halo Bang lalu Halo Juga Bang,"Tidak ada, kode setelah return tidak pernah dijalankan",30,4
+22,"🕵️ Awas jebakan! `const hitung = (a, b) => { a + b; }; console.log(hitung(2, 3));` Apa yang tercetak?",NaN,undefined,5,Error,30,2
+23,Arrow function bisa ditulis singkat: `const sapa = nama => 'Hallo ' + nama;`. Kurung `()` pada parameter boleh dihilangkan jika parameternya...,memakai nilai default,dua atau lebih,bertipe string saja,hanya satu,25,4
+24,"📝 Nilai akhir = tugas 40% + ujian 60%, lulus jika nilai akhir >= 75. Kaysan dapat tugas 50 dan ujian 90. Berapa nilai akhir dan statusnya?","74, tidak lolos","74, lulus","140, lulus","70, tidak lolos",40,1
+25,Function yang mengembalikan function! `function multiplier(x) { return function (num) { return x * num; }; } const triple = multiplier(3); console.log(triple(10));` Berapa output-nya?,13,[Function],3,30,35,4
+26,"Function dikirim sebagai parameter ke function lain: `const umurMultiply = (umur) => umur * 2; function calculate(operation, num) { return operation(num) / 2; } console.log(calculate(umurMultiply, 3));` Berapa hasilnya?",6,3,12,1.5,35,2
+27,Di materi ada 3 cara membuat array. Mana yang BUKAN cara yang valid?,"new Array(1, 2, 3)","[1, 2, 3]","Array.create(1, 2, 3)",Array.from('PISANG'),20,3
+28,"🐔 Indeks array mulai dari 0! `const data = ['Ayam', 10, true, ['cicak', 'bebek']]; console.log(data[3][1]);` Apa outputnya?",bebek,true,undefined,cicak,25,1
+29,"Tebak hasilnya: `const lama = ['Satu', 'Dua']; const baru = Array.from(lama); console.log(lama === baru);`",undefined,true,Error,false,25,4
+30,"🚶 Antrean kantin: `const antre = ['Rina', 'Budi']; antre.push('Sari', 'Dimas'); antre.shift(); antre.pop(); console.log(antre);` Berapa isi `antre` sekarang?","['Budi', 'Sari', 'Dimas']","['Budi', 'Sari']","['Sari', 'Dimas']","['Rina', 'Budi', 'Sari']",40,2
+31,"✂️ Dua kali splice: `const buah = ['Apel', 'Mangga', 'Nanas', 'Pisang']; buah.splice(2, 2); buah.splice(0, 2); console.log(buah);` Isi `buah` di akhir?","['Apel', 'Mangga']","['Nanas', 'Pisang']",[] (array kosong),"['Mangga', 'Nanas']",35,3
+32,"🗑️ `const nama = ['Rina', 'Budi', 'Sari', 'Dimas']; delete nama[3];` Apa kekurangan `delete` pada array?",Menghapus semua elemen array,"Hanya menghapus datanya, slot elemennya tetap ada",Selalu error karena array itu const,Menghapus elemen pertama saja,30,2
+33,"🔤 Urutan hasilnya? `const siswa = ['Cici', 'Andi', 'Budi']; siswa.sort(); console.log(siswa);`","['Budi', 'Andi', 'Cici']","['Cici', 'Budi', 'Andi']","['Cici', 'Andi', 'Budi']","['Andi', 'Budi', 'Cici']",20,4
+34,"Destructuring array dengan variabel lebih banyak dari elemennya: `const [x, y, z] = [1, 2]; console.log(z);` Apa yang tercetak?",Error,null,undefined,0,25,3
+35,"`const produk = { name: 'Laptop', price: 4500000 };` Pada pasangan `price: 4500000`, `price` dan `4500000` secara berurutan disebut...",index dan elemen,variabel dan parameter,key dan value,value dan key,20,3
+36,`const akun = { 'nama lengkap': 'Rina Sari' };` Cara mana yang BERHASIL mengambil 'Rina Sari'?,akun['nama lengkap'],akun[nama lengkap],akun.'nama lengkap',akun.nama lengkap,25,1
+37,Tebak output: `const kelas = { totalSiswa: 20 }; const { totalSiswaHasLaptop = 18 } = kelas; console.log(totalSiswaHasLaptop);`,18,Error,undefined,20,30,1
+38,BENAR atau SALAH? `const { kota } = { nama: 'Arsy' };` langsung menyebabkan error karena key `kota` tidak ada di object.,BENAR,SALAH,,,25,2
+39,"🛠️ `const akun = { username: 'dicoding', isBanned: false }; akun.isBanned = true; akun.role = 'Admin'; delete akun.username; console.log(akun);` Isi `akun` sekarang?","{ isBanned: false, role: 'Admin' }","{ username: 'dicoding', isBanned: true, role: 'Admin' }","{ isBanned: true, role: 'Admin' }",Error karena akun adalah const,40,3
+40,"Function juga bisa jadi value property object! `const kalkulator = { tambah: (a, b) => a + b }; console.log(kalkulator.tambah(3, 4));` Apa outputnya?",34,undefined,Error,7,25,4
+41,🗺️ Apa kelebihan utama Map dibanding Object biasa?,Map tidak bisa menyimpan value berupa function,Map otomatis mengurutkan key dari A ke Z,"Key Map boleh bertipe apa saja, tidak hanya string",Key Map wajib angka berurutan seperti array,25,3
+42,"Key di Map peka terhadap tipe data! `const data = new Map(); data.set(5, 'Rina'); console.log(data.has('5'), data.has(Number('5')));` Apa outputnya?",true true,false true,true false,false false,35,2
+43,"🔑 Object dipakai sebagai key Map: `const userB = { id: 2 }; const sesi = new Map(); sesi.set(userB, 'Guest'); console.log(sesi.get(userB), sesi.get({ id: 2 }));` Apa outputnya?",Guest undefined,Guest Guest,undefined undefined,undefined Guest,40,1
+44,Ada elemen h1 dengan id 'judul' dan elemen button dengan class 'btn'. Pasangan `querySelector` yang BENAR untuk memilih keduanya?,'judul' dan 'btn','#judul' dan '#btn','#judul' dan '.btn','.judul' dan '#btn',25,3
+45,"🖱️ Agar teks elemen h1 ber-id 'judul' berubah saat tombol `btn` diklik, kode mana yang tepat?","btn.addEventListener('click', () => { judul.textContent = 'Berhasil!'; })","judul.addEventListener('click', () => { btn.textContent = 'Berhasil!'; })",btn.onclick.textContent = 'Berhasil!',"btn.addEventListener('click', judul.textContent)",40,1
+46,🍎 Tombol 'Ganti Gambar' menjalankan `gambar.src = './apel-hijau.png'`. Apa yang sebenarnya diubah?,"Atribut src elemen img, sehingga gambar berganti",Teks di dalam elemen img,Nama file apel-hijau.png di komputer,Class CSS elemen img,25,1
+47,ESM (ECMAScript Modules) adalah...,Aplikasi untuk mengedit file .js,Nama lain dari framework React,Library untuk membuat animasi di web,Standar modul JavaScript untuk memecah & memakai ulang kode antar file,25,4
+48,"Di `export.js`: `export default function sayHi(name) { return 'Hi, ' + name + '!'; }`. Di file lain: `import halo from './export.js'; console.log(halo('Alice'));` Apa output-nya?",Error: nama import harus sayHi,"Hi, Alice!","Hi, halo!",undefined,40,2
+49,`export.js` punya `export default function sayHi()` dan `export function sayBye()`. Cara mengimpor KEDUANYA yang benar?,"import halo, { sayBye } from './export.js'","import { halo, sayBye } from './export.js'","import { sayHi, sayBye } from './export.js'","import halo, sayBye from './export.js'",35,1
+50,"💡 Di `math.js`: `export default function rumus() { return { tambah: (a, b) => a + b, kali: (a, b) => a * b }; }`. Di file lain: `import math from './math.js'; const { kali } = math(); console.log(kali(5, 10));` Output?",15,50,510,undefined,45,2

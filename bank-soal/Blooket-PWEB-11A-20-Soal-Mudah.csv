@@ -1,0 +1,26 @@
+﻿,,,,,,,
+Question #,Question Text,Answer 1,Answer 2,"Answer 3 
+(Optional)","Answer 4 
+(Optional)","Time Limit (sec) 
+(Max: 300 Seconds)","Correct Answer(s) 
+(Only Include Answer #)"
+1,🍫 Satu bungkus coklat isi 6. Dimas beli 7 bungkus. Berapa hasil `6 * 7`?,49,42,13,36,15,2
+2,Operator `%` (modulus) menghasilkan...,Sisa hasil bagi,Hasil pangkat,Persentase,Hasil bagi,15,1
+3,BENAR atau SALAH? Hasil dari `10 >= 10` adalah true.,SALAH,BENAR,,,15,2
+4,Tebak output: `console.log(true && false);`,undefined,false,Error,true,20,2
+5,"Pada `let nama = 'Rina'`, simbol `=` disebut operator...",Logika,Perbandingan,Aritmetika,Assignment (penugasan),15,4
+6,Tebak output: `console.log('7' + 2);`,NaN,9,Error,72,20,4
+7,Berapa hasil `parseInt('50px')`?,50,NaN,0,50px,15,1
+8,Kata kunci untuk membuat sebuah function di JavaScript adalah...,func,method,function,def,15,3
+9,Tebak output: `function sapa() { return 'Halo'; } console.log(sapa());`,Halo,undefined,Error,sapa,20,1
+10,Tebak output: `const dobel = (n) => n * 2; console.log(dobel(4));`,8,4,24,6,20,1
+11,"🍎 Indeks array dimulai dari 0. `const buah = ['Apel', 'Mangga', 'Nanas']; console.log(buah[0]);` Apa outputnya?",Nanas,undefined,Apel,Mangga,20,3
+12,`const tim = ['Rina']; tim.push('Budi'); console.log(tim);` Isi `tim` sekarang?,['Rina'],['Budi'],"['Rina', 'Budi']","['Budi', 'Rina']",20,3
+13,"`const angka = ['Satu', 'Dua', 'Tiga']; angka.pop(); console.log(angka);` Isi `angka` sekarang?","['Dua', 'Tiga']",['Satu'],['Tiga'],"['Satu', 'Dua']",20,4
+14,"`const siswa = { nama: 'Rina', kelas: 11 }; console.log(siswa.nama);` Apa outputnya?",11,Rina,undefined,nama,20,2
+15,"`const siswa = { nama: 'Rina', kelas: 11 }; siswa.kelas = 12; console.log(siswa.kelas);` Apa outputnya?",23,undefined,12,11,20,3
+16,"`const { nama } = { nama: 'Budi', umur: 16 }; console.log(nama);` Apa outputnya?",nama,undefined,Budi,16,20,3
+17,"🗺️ `const m = new Map(); m.set('apel', 5); console.log(m.get('apel'));` Apa outputnya?",5,undefined,Map,apel,20,1
+18,Elemen ber-id 'judul' dipilih dengan `document.querySelector(...)`. Apa isi kurungnya?,'.judul','judul','*judul','#judul',20,4
+19,"🖱️ Method `addEventListener('click', ...)` dipakai untuk...",Membuat array baru,Menyimpan data ke Map,Mengurutkan isi array,Menjalankan kode saat elemen diklik,20,4
+20,Kata kunci untuk memakai function dari file JavaScript lain (ES Module) adalah...,using,import,load,include,15,2
